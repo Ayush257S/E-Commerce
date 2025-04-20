@@ -1,0 +1,128 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eee8f1;
+}
+
+.payment-container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 1.3rem;
+  background: linear-gradient(195deg, #5b347599,#dec9c9c8, #5b347599);
+  padding: 20px;
+}
+
+.happy-shopping {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.happy-shopping img {
+  width: 100%;
+  border-radius: 1.3rem;
+}
+
+.delivery-add, .payment {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.payment-way {
+  display: flex;
+  flex-direction: column;
+}
+
+.Cards-options {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-details {
+    display: none; 
+    flex-direction: column;
+    gap: 5.7px;
+}
+
+.card-row {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.card-details p{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.Card-Image{width: 80px;
+mix-blend-mode: multiply;
+opacity: 0.9;}
+
+/* .QR{
+  display: none;
+  height: auto;
+  display: flex;
+}
+
+.QR img{
+  display: none;
+  width: 200px; 
+} */
+
+.QR {
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.QR img {
+  width: 200px; 
+  height: auto;
+  border-radius: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #264653;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b2f3d;
+}

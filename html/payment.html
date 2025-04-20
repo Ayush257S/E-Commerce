@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/css/payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="happy-shopping">
+            <img src="/images/Cart-Right.jpg" alt="Shopping Cart">
+        </div>
+        
+        <div class="delivery-add">
+            <h2>Billing Address</h2>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" placeholder="Enter full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter address">
+
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="Enter city">
+
+            <label for="state">State:</label>
+            <input type="text" id="state" placeholder="Enter state">
+
+            <label for="pin-code">Pin Code:</label>
+            <input type="text" id="pin-code" placeholder="Enter pin code">
+        </div>
+
+        <div class="payment">
+            <h2>Payment</h2>
+            <div class="payment-way">
+                <p><b>Pay with:</b></p>
+                <label>
+                    <input type="radio" value="Credit Card" name="Payment"> Credit Card
+                </label>
+                <label>
+                    <input type="radio" value="Debit Card" name="Payment"> Debit Card
+                </label>
+                <label>
+                    <input type="radio" value="UPI" name="Payment"> UPI
+                </label>
+            </div>
+
+            <div class="card-details">
+                <div class="card-row">
+                    <p>Cards accepted:</p>
+                    <img class="Card-Image" src="/images/Cards.jpg" alt="Accepted Cards">
+                </div>
+                <label for="card-name">Name on Card:</label>
+                <input type="text" id="card-name" placeholder="Enter Name">
+
+                <label for="card-number">Card Number:</label>
+                <input type="number" id="card-number" placeholder="XXXX XXXX XXXX">
+
+                <label for="exp-month">Exp Month:</label>
+                <input type="text" id="exp-month" placeholder="Enter Exp Month">
+
+                <label for="exp-year">Exp Year:</label>
+                <input type="number" id="exp-year" placeholder="Enter Exp Year">
+
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" placeholder="Enter CVV" maxlength="3">
+
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="QR">
+                <img src="/images/QR.webp" alt="QR Code">
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/payment.js"></script>
+</body>
+</html>
