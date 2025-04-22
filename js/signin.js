@@ -33,6 +33,7 @@ form.addEventListener("submit", async (e) => {
       });
     }
   } catch (err) {
+    // getting error here
     console.error(err);
   }
 

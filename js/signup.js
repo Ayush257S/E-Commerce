@@ -1,7 +1,6 @@
-let userData = JSON.parse(localStorage.getItem("userdata")) || [];
 let form = document.getElementById("input-field");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   let obj = {
@@ -11,17 +10,10 @@ form.addEventListener("submit", (e) => {
     password: form.elements["password"].value,
   };
 
-  let exists = userData.some((user) => user.email === obj.email);
-  if (exists) {
-    Swal.fire({
-      icon: "error",
-      title: "Email already registered 😓",
-      showConfirmButton: true,
-    });
-    return;
-  }
+  // Password validation: exactly 6 digits (0-9)
+  const passwordPattern = /^\d{6}$/;
 
-  if (obj.password.length < 6) {
+  if (!passwordPattern.test(obj.password)) {
     Swal.fire({
       icon: "warning",
       title: "Password must be at least 6 characters",
@@ -30,17 +22,36 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  userData.push(obj);
-  localStorage.setItem("userdata", JSON.stringify(userData));
+  try {
+    const res = await fetch("http://localhost:5000/api/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(obj),
+    });
 
-  Swal.fire({
-    icon: "success",
-    title: "Account Created Successfully ☃️",
-    showConfirmButton: false,
-  });
+    const data = await res.json();
 
-  form.reset();
-  homepage();
+    if (res.ok) {
+      Swal.fire({
+        icon: "success",
+        title: "Account Created Successfully ☃️",
+        showConfirmButton: false,
+      });
+      form.reset();
+      homepage();
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Signup Failed 😓",
+        text: data.message,
+        showConfirmButton: true,
+      });
+    }
+  } catch (err) {
+    console.log("Signup Error:", err);
+  }
 });
 
 let homepage = () => {
