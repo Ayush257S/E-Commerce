@@ -78,7 +78,7 @@
   width: 100%;
 }
 
-/* dropdown comg */
+
 .hover-li {
   display: none;
   position: fixed;
@@ -166,7 +166,7 @@
   border: 1px solid orangered;
 }
 
-/* top body */
+
 .top-body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -177,7 +177,7 @@
 .top-body img {
   width: 100%;
 }
-/* discount banner */
+
 .discount-banner1 {
   width: 99%;
   margin: 0 auto;
@@ -188,7 +188,7 @@
 .mid{
   margin-top: 10%;
 }
-/* omg & never banner */
+
 .omg-banner {
   width: 99%;
   margin: 0 auto;
@@ -202,7 +202,7 @@
 .never-banner img {
   width: 100%;
 }
-/* super saving deals */
+
 .omg-deals {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

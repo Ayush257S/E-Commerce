@@ -130,7 +130,6 @@
   width: 100px;
   opacity: 1;
   background: rgba(255, 255, 255, 0.7);
-  /* background-color: transparent; */
   color: black;
   font-size: 1vw;
   text-transform: uppercase;
@@ -144,7 +143,6 @@
   opacity: 1;
 }
 
-/* responsive */
 @media (max-width: 767px) {
   .search {
     width: 40%;
@@ -161,7 +159,6 @@
   }
   .categories {
     display: none;
-    /* width: 90%; */
   }
   .right-cont {
     margin: 18% auto 0;
@@ -190,7 +187,6 @@
   }
   .categories {
     display: none;
-    /* width: 90%; */
   }
   .right-cont {
     margin: 18% auto 0;
