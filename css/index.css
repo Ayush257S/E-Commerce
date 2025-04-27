@@ -290,9 +290,6 @@
 .gift-deals img {
   width: 100%;
 }
-/* never seen before */
-
-/* shop by category */
 
 #footer {
   display: flex;
@@ -359,7 +356,6 @@
   margin-bottom: 8px;
 }
 
-/* media queries */
 @media (max-width: 764px) {
   .search {
     width: 40%;

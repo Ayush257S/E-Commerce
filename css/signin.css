@@ -189,15 +189,12 @@ input {
   border: none;
 }
 #footer-end-content > :nth-child(2) {
-  /* font-weight: 300; */
   margin-bottom: 8px;
 }
 #footer-end-content > :nth-child(3) {
-  /* font-weight: 300; */
   margin-bottom: 8px;
 }
 #footer-end-content > :nth-child(10) {
-  /* font-weight: 300; */
   margin-bottom: 8px;
 }
 @media (max-width: 767px) {
@@ -220,7 +217,6 @@ input {
   }
   .categories {
     display: none;
-    /* width: 90%; */
   }
 }
 @media (max-width: 499px) {
@@ -243,6 +239,5 @@ input {
   }
   .categories {
     display: none;
-    /* width: 90%; */
   }
 }
