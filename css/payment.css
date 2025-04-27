@@ -89,17 +89,6 @@ input {
 mix-blend-mode: multiply;
 opacity: 0.9;}
 
-/* .QR{
-  display: none;
-  height: auto;
-  display: flex;
-}
-
-.QR img{
-  display: none;
-  width: 200px; 
-} */
-
 .QR {
   display: none; 
   justify-content: center;
